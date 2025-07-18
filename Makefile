@@ -11,7 +11,7 @@ help:
 	@echo "  make clean          - Clean build artifacts"
 
 install:
-	bun install
+	cd app && bun install
 	cd contract && forge install
 
 dev:
