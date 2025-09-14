@@ -21,4 +21,6 @@ echo "Primus Contract (Monad Testnet): $PRIMUS_CONTRACT_ADDRESS"
 cd contract && forge script script/DeployV2.s.sol \
   --rpc-url http://localhost:8545 \
   --broadcast \
+  --sender 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 \
+  --private-key $PRIVATE_KEY \
   -vvv
