@@ -35,9 +35,15 @@ clean:
 	rm -rf contract/cache contract/out
 
 setup-env:
-	@if [ ! -f .env ]; then \
-		cp .env.template .env; \
-		echo "Created .env file from template. Please update with your values."; \
+	@if [ ! -f app/.env ]; then \
+		cp app/.env.template app/.env; \
+		echo "Created app/.env file from template. Please update with your values."; \
 	else \
-		echo ".env file already exists."; \
+		echo "app/.env file already exists."; \
+	fi
+	@if [ ! -f contract/.env ]; then \
+		cp contract/.env.template contract/.env; \
+		echo "Created contract/.env file from template. Please update with your values."; \
+	else \
+		echo "contract/.env file already exists."; \
 	fi

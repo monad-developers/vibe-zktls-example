@@ -1,0 +1,3 @@
+[submodule "contract/lib/zktls-contracts"]
+	path = contract/lib/zktls-contracts
+	url = https://github.com/primus-labs/zktls-contracts
