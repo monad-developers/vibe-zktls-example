@@ -1,1 +1,4 @@
+packages:
+  - "app"
+
 minimumReleaseAge: 10080
